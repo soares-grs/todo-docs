@@ -1,6 +1,8 @@
 <template>
   <div>
-    <button :class="button({ color: colorByStatus })">Add</button>
+    <button :disabled="!isEnable" :class="button({ color: colorByStatus })">
+      Add
+    </button>
   </div>
 </template>
 
