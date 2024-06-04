@@ -1,7 +1,7 @@
 <template>
   <div>
     <input
-      :class="button({ color: props.color })"
+      :class="input({ color: props.color })"
       type="text"
       :placeholder="placeholder"
       :value="modelValue"
@@ -13,8 +13,8 @@
 <script setup>
 import { tv } from "tailwind-variants";
 
-const button = tv({
-  base: "p-4 rounded-md shadow-lg outline-none border-spacing-2 border mt-4",
+const input = tv({
+  base: "p-4 rounded-md shadow-lg outline-none border-spacing-2 border",
   variants: {
     color: {
       primary: "border-blue-300",
